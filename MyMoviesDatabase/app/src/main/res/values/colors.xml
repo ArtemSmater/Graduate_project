@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="red">#E53935</color>
+
+    <color name="black_transparent">#4D000000</color>
+    <color name="red_transparent">#9CC50F0F</color>
+
+    <color name="white_smoke">#F5F5F5</color>
+    <color name="red_transparent1">#1AB71C1C</color>
+    <color name="black_transparent1">#1A5E35B1</color>
+    <color name="aqua1">#41F57F17</color>
+    
+    <style name="title_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/title_background</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/white_smoke</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

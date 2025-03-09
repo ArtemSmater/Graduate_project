@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Star Guess Application</string>
+    <string name="start_image">Start image</string>
+    <string name="clear_score">CLEAR SCORE</string>
+    <string name="score">Score: %d</string>
+    <string name="mistakes">Mistakes: %d</string>
+</resources>

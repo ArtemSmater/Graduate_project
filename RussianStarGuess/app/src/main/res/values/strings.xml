@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Russian Star Guess</string>
+    <string name="next_picture">NEXT PICTURE</string>
+    <string name="picture">picture</string>
+</resources>
