@@ -20,30 +20,30 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        imgList = new ArrayList<>();
-        addImagesToList();
-        Button buttonClear = findViewById(R.id.button1);
-        Button buttonRandom = findViewById(R.id.button3);
-        textView = findViewById(R.id.textView);
-        imageView = findViewById(R.id.imageView);
-        buttonClear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                count = 0;
-                textView.setText(returnStringValue(count));
-                imageView.setImageResource(R.drawable.smile);
-            }
-        });
-        buttonRandom.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onClick(View v) {
-                imageView.setImageResource(imgList.get((int) ((Math.random() * (imgList.size() - 2)) + 2)));
-                count = (int) (Math.random() * 1000);
-                textView.setText(returnStringValue(count));
-            }
-        });
+        setContentView(R.layout.first_layout);
+//        imgList = new ArrayList<>();
+//        addImagesToList();
+//        Button buttonClear = findViewById(R.id.button1);
+//        Button buttonRandom = findViewById(R.id.button3);
+//        textView = findViewById(R.id.textView);
+//        imageView = findViewById(R.id.imageView);
+//        buttonClear.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                count = 0;
+//                textView.setText(returnStringValue(count));
+//                imageView.setImageResource(R.drawable.smile);
+//            }
+//        });
+//        buttonRandom.setOnClickListener(new View.OnClickListener() {
+//            @SuppressLint("SetTextI18n")
+//            @Override
+//            public void onClick(View v) {
+//                imageView.setImageResource(imgList.get((int) ((Math.random() * (imgList.size() - 2)) + 2)));
+//                count = (int) (Math.random() * 1000);
+//                textView.setText(returnStringValue(count));
+//            }
+//        });
     }
 
     private String returnStringValue(int value) {

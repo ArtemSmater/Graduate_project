@@ -5,4 +5,7 @@
     <string name="random">RANDOM</string>
     <string name="zero">0</string>
     <string name="smile">smile</string>
+    <string name="todo">TODO</string>
+    <string name="all_photos">All Photos</string>
+    <string name="album">Album</string>
 </resources>
