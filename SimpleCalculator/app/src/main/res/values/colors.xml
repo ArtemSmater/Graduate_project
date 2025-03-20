@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey_black">#202020</color>
+    <color name="grey">#3b3b3b</color>
+    <color name="dark_grey">#323232</color>
+    <color name="light_grey">#848381</color>
+    <color name="dark_red">#6A0505</color>
+    <color name="dark_white">#B8ADAD</color>
+
+    <style name="numbers_style">
+        <item name="android:background">@drawable/numbers_background</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/dark_white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="equipments_style">
+        <item name="android:background">@drawable/equipments_background</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/dark_white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="equals_style">
+        <item name="android:background">@drawable/equals_background</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/grey_black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+</resources>
