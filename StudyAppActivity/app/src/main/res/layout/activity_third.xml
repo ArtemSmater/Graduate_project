@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".ThirdActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/red"
+        android:padding="13dp"
+        android:text="@string/previous_page"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivFirstHan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toStartOf="@id/ivSecondHand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/my_second_animation" />
+
+    <ImageView
+        android:id="@+id/ivSecondHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivFirstHan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/my_third_animation" />
+
+    <Button
+        android:id="@+id/buttonOfLeftHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/rotate_center_hand"
+        app:layout_constraintEnd_toStartOf="@id/buttonOfRightHand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivFirstHan" />
+
+    <Button
+        android:id="@+id/buttonOfRightHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/rotate_corner_hand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonOfLeftHand"
+        app:layout_constraintTop_toBottomOf="@+id/ivSecondHand" />
+</androidx.constraintlayout.widget.ConstraintLayout>

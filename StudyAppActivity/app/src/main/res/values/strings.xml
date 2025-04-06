@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StudyAppActivity</string>
+    <string name="next_page">Next page!</string>
+    <string name="previous_page">Previous page!</string>
+    <string name="todo">TODO</string>
+    <string name="boy_animation">Boy animation</string>
+    <string name="rotate_corner_boy">Rotate corner boy</string>
+    <string name="rotate_center_boy">Rotate center boy</string>
+    <string name="rotate_center_hand">Rotate center hand</string>
+    <string name="rotate_corner_hand">Rotate corner hand</string>
+</resources>
