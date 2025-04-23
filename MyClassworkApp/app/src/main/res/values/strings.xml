@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Classwork App</string>
+    <string name="green_color">Green color</string>
+    <string name="red_color">Red color</string>
+    <string name="colored_text">Colored text</string>
+    <string name="change_color">Change color</string>
+    <string name="pressed">Pressed</string>
+    <string name="unpressed">Unpressed</string>
+    <string name="bold">Bold</string>
+    <string name="italic">Italic</string>
+    <string name="sample_text">Sample text</string>
+</resources>
