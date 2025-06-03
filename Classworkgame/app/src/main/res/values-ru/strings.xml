@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Classwork game</string>
+    <string name="start">start</string>
+    <string name="back">back</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="ten">10</string>
+    <string name="eleven">11</string>
+    <string name="twelve">12</string>
+    <string name="thirteen">13</string>
+    <string name="fourteen">14</string>
+    <string name="fifteen">15</string>
+    <string name="levels">Levels</string>
+    <string name="level">Level:</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="continue_1">continue</string>
+    <string name="level_one">Level one</string>
+    <string name="level_two">Level two</string>
+    <string name="level_three">Level three</string>
+    <string name="level_four">Level four</string>
+
+    <string name="preview_first">Choose the biggest number.\n
+        Questions could be repeated, while you do not get 20 points.</string>
+
+    <string name="preview_second">Choose the biggest Roman number.\n
+        Questions could be repeated, while you do not get 20 points.</string>
+
+    <string name="preview_third">Choose the biggest fractional number.\n
+        Questions could be repeated, while you do not get 20 points.</string>
+
+    <string name="preview_four">Choose an edible element.\n
+        Questions could be repeated, while you do not get 20 points.</string>
+
+    <string name="end_first">First level is completed!\nYou are amazing!</string>
+
+    <string name="end_second">Second level is completed!\nYou are amazing!</string>
+
+    <string name="end_third">Third level is completed!\nYou are amazing!</string>
+
+    <string name="end_four">Fourth level is completed!\nYou are amazing!</string>
+
+</resources>

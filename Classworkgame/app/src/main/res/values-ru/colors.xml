@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black_transparent">#A6211C1C</color>
+    <color name="black_dark_transparent">#E1121010</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_brown">#DEBEA5</color>
+    <color name="brown">#f1a069</color>
+    <color name="dark_brown">#c45343</color>
+    <color name="light_red">#B6E99A91</color>
+    <color name="red">#B37A1005</color>
+    <color name="transparent_red">#859B2216</color>
+    <color name="transparent_light_red">#94D18B86</color>
+    <color name="light_black">#7B211C1C</color>
+    <color name="light_green">#B1195733</color>
+    <color name="light_yellow">#FFD54F</color>
+    <color name="light_grey">#B1A4A1A1</color>
+    <color name="grey">#B1615F5F</color>
+
+    <style name="tvLevels">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">30sp</item>
+        <item name="fontFamily">@font/new_font</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

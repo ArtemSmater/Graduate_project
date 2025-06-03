@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayingActivity"
+    android:background="@drawable/bg">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSecondBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/back"
+        android:textSize="30sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/new_font"
+        android:textAllCaps="true"
+        android:background="@drawable/btn_back_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/llOutside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSecondBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/level"
+            android:fontFamily="@font/new_font"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:textColor="@color/black_transparent"/>
+
+        <ProgressBar
+            android:id="@+id/pbLevels"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/llImages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/app_name"
+                android:background="@drawable/img_background"
+                app:srcCompat="@drawable/img" />
+
+            <ImageView
+                android:id="@+id/ivRight"
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/app_name"
+                android:background="@drawable/img_background"
+                app:srcCompat="@drawable/img" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/left"
+                android:fontFamily="@font/new_font"
+                android:textStyle="bold"
+                android:textSize="40sp"/>
+
+            <TextView
+                android:id="@+id/tvRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/right"
+                android:fontFamily="@font/new_font"
+                android:textStyle="bold"
+                android:textSize="40sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
