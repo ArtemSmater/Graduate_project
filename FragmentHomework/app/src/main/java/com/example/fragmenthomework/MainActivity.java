@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             if (item.getItemId() == R.id.first_item) {
                 tab = tabLayout.getTabAt(0);
                 assert tab != null;
-                if(!tab.isSelected()) {
+                if (!tab.isSelected()) {
                     tab.select();
                 }
             }
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
             if (item.getItemId() == R.id.second_item) {
                 tab = tabLayout.getTabAt(1);
                 assert tab != null;
-                if(!tab.isSelected()) {
+                if (!tab.isSelected()) {
                     tab.select();
                 }
             }
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
             if (item.getItemId() == R.id.third_item) {
                 tab = tabLayout.getTabAt(2);
                 assert tab != null;
-                if(!tab.isSelected()) {
+                if (!tab.isSelected()) {
                     tab.select();
                 }
             }
