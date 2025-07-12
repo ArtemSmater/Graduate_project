@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_dark">#A1E0F7FA</color>
+    <color name="light_blue">#9571B0E7</color>
+    <color name="blue">#9D04128A</color>
+    <color name="green">#7705751F</color>
+
+    <color name="red">#CDA70000</color>
+    <color name="light_red">#CBFFBABA</color>
+    <color name="yellow">#CDFAD759</color>
+    <color name="orange">#CB9D7004</color>
+    <color name="light_green">#CB52BF90</color>
+    <color name="dark_green">#CD317256</color>
+    <color name="lighter_blue">#CB00EAFF</color>
+    <color name="dark_blue">#CC064A8C</color>
+
+
+
+    <color name="black_trans">#55050614</color>
+    <color name="black_trans1">#3B0D1038</color>
+    <color name="green_trans">#83DDEFCF</color>
+    <color name="red_trans">#5EC62828</color>
+    <color name="yellow_trans">#6EFAD759</color>
+    <color name="white_trans">#90C7C4C4</color>
+
+    <style name="btn_lvl_style">
+        <item name="android:layout_height">120dp</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:fontFamily">@font/first_font</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white_dark</item>
+    </style>
+</resources>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">English words app</string>
+    <string name="quick_start">Quick start</string>
+    <string name="game_menu">Game menu</string>
+    <string name="select_level">Select level</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="back">Back</string>
+    <string name="continue_btn">Continue</string>
+    <string name="first_level">First level</string>
+
+    <string name="animals">Animals</string>
+    <string name="fruits">Fruits</string>
+    <string name="birds">Birds</string>
+    <string name="family">Family</string>
+    <string name="vegetables">Vegetables</string>
+    <string name="colors">Colors</string>
+    <string name="profession">Professions</string>
+    <string name="sea">Sea creatures</string>
+    <string name="person">Body parts</string>
+
+    <string name="animals_prev">Choose correct name of the animal!\nGood luck!</string>
+    <string name="animals_end">You did it!\nIt was not fast, but you tried.\nYou already know about 20 animals!</string>
+
+    <string name="fruits_prev">Choose correct name of the fruit!\nGood luck!</string>
+    <string name="fruits_end">You did it!\nYou won an apple, not phone!\nDo not stop studying!.</string>
+
+    <string name="birds_prev">Choose correct name of the bird!\nGood luck!</string>
+    <string name="birds_end">You did it!\nThese birds are famous!\nYou have to know them!.</string>
+
+    <string name="family_prev">Choose correct name of the family member!\nGood luck!</string>
+    <string name="family_end">You did it!\nYour family are proud of you!\nGood job!.</string>
+
+    <string name="vegetables_prev">Choose correct name of the vegetable!\nGood luck!</string>
+    <string name="vegetables_end">You did it!\nWhat is your favourite vegetable?\n</string>
+
+    <string name="colors_prev">Choose correct name of the color!\nGood luck!</string>
+    <string name="colors_end">You did it!\nNow you know the famous colors!\nGood job!.</string>
+
+    <string name="prof_prev">Choose correct name of the profession!\nGood luck!</string>
+    <string name="prof_end">You did it!\nWhat is your major?\n</string>
+
+    <string name="sea_prev">Choose correct name of sea creatures!\nGood luck!</string>
+    <string name="sea_end">You did it!\nIncredible!</string>
+
+    <string name="person_prev">Choose the correct body part!\nGood luck!</string>
+    <string name="person_end">You did it!\nHold your health in safe!.</string>
+    <string name="game_over">Game over</string>
+    <string name="clear_results">Clear results</string>
+    <string name="your_nickname">Your nickname</string>
+    <string name="save_result">Save result</string>
+    <string name="exit">Exit</string>
+</resources>

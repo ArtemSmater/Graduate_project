@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background">
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/view_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSecondPg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_background"
+            android:text="@string/first_page"
+            android:textSize="20sp"
+            android:fontFamily="@font/new_font"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnThirdPg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/item_background"
+            android:text="@string/second_page"
+            android:textSize="20sp"
+            android:fontFamily="@font/new_font"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnFourthPg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/item_background"
+            android:text="@string/third_page"
+            android:textSize="20sp"
+            android:fontFamily="@font/new_font"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

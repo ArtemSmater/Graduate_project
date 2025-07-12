@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/tvLevels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/first_font"
+        android:text="@string/select_level"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:columnCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLevels"
+        app:rowCount="3">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1"
+            style="@style/btn_lvl_style"
+            android:background="@drawable/btn_lvl_background"
+            android:onClick="onClickSelect"
+            android:text="@string/one" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn2"
+            style="@style/btn_lvl_style"
+            android:background="@drawable/btn_lvl_background"
+            android:onClick="onClickSelect"
+            android:text="@string/two" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn3"
+            style="@style/btn_lvl_style"
+            android:background="@drawable/btn_lvl_background"
+            android:onClick="onClickSelect"
+            android:text="@string/three" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn4"
+            style="@style/btn_lvl_style"
+            android:background="@drawable/btn_lvl_background"
+            android:onClick="onClickSelect"
+            android:text="@string/four" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn5"
+            style="@style/btn_lvl_style"
+            android:background="@drawable/btn_lvl_background"
+            android:onClick="onClickSelect"
+            android:text="@string/five" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn6"
+            style="@style/btn_lvl_style"
+            android:background="@drawable/btn_lvl_background"
+            android:onClick="onClickSelect"
+            android:text="@string/six" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn7"
+            style="@style/btn_lvl_style"
+            android:background="@drawable/btn_lvl_background"
+            android:onClick="onClickSelect"
+            android:text="@string/seven" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn8"
+            style="@style/btn_lvl_style"
+            android:background="@drawable/btn_lvl_background"
+            android:onClick="onClickSelect"
+            android:text="@string/eight" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn9"
+            style="@style/btn_lvl_style"
+            android:background="@drawable/btn_lvl_background"
+            android:onClick="onClickSelect"
+            android:text="@string/nine" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnToBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_back_background"
+        android:onClick="toMainPage"
+        android:fontFamily="@font/first_font"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:text="@string/back"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
