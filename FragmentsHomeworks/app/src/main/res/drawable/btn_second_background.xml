@@ -3,28 +3,17 @@
 
     <item android:state_pressed="true">
         <shape>
-            <solid android:color="@color/brown" />
-            <stroke android:width="1dp" android:color="#4C7E2306" />
-            <corners android:radius="5dp" />
+            <solid android:color="@color/brown_trans"/>
+            <corners android:radius="10dp" />
         </shape>
     </item>
 
     <item>
-        <layer-list>
-            <item android:right="2dp" android:top="2dp">
-                <shape>
-                    <corners android:radius="5dp" />
-                    <solid android:color="#4DE64A19" />
-                </shape>
-            </item>
-            <item android:bottom="2dp" android:left="2dp">
-                <shape>
-                    <gradient android:angle="270" android:endColor="@color/brown" android:startColor="@color/tan" />
-                    <stroke android:width="1dp" android:color="#4D6D1B01" />
-                    <corners android:radius="5dp" />
-                </shape>
-            </item>
-        </layer-list>
+
+        <shape>
+            <solid android:color="@color/brown"/>
+            <corners android:radius="10dp" />
+        </shape>
     </item>
 
 </selector>

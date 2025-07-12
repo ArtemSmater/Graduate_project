@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Fragments Homeworks</string>
+    <string name="cities_homework">Cities homework</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cities_description">Cities description</string>
+    <string name="choose_a_country">Choose a country</string>
+    <string name="show_description">SHOW DESCRIPTION</string>
+    <string name="choose_a_city">Choose a city</string>
+    <string name="create_note">Create note</string>
+    <string name="note_title">Note title</string>
+    <string name="note_description">Note description</string>
+    <string name="quick">Quick</string>
+    <string name="middle">Middle</string>
+    <string name="await">Await</string>
+    <string name="set_date">00/00/2000</string>
+    <string name="set_time">00:00</string>
+    <string name="select_when">Select when</string>
+    <string name="set_importance">Set importance</string>
+    <string name="notebook_page">Notebook page</string>
+
+    <string-array name="spin_countries">
+        <item>Russia</item>
+        <item>Belarus</item>
+        <item>China</item>
+    </string-array>
+
+    <string-array name="rus_cities">
+        <item>Moscow</item>
+        <item>Saint-Petersburg</item>
+        <item>Novosibirsk</item>
+    </string-array>
+
+    <string-array name="bel_cities">
+        <item>Minsk</item>
+        <item>Gomel</item>
+        <item>Vitebsk</item>
+    </string-array>
+
+    <string-array name="china_cities">
+        <item>Beijing</item>
+        <item>Shanghai</item>
+        <item>Tianjin</item>
+    </string-array>
+
+    <string-array name="rus_cities_desc">
+        <item>The majority of Russian citizens live in the capital of Moscow. Moscow, which is the second-most populated city in Europe, is known for its rich culture and vibrant history. The population has exploded in the last 70 years. Today, about 12.7 million people live in Moscow, and the city’s population in 1950 was just 5.3 million. Moscow’s population may actually be much larger than what official figures show. There are believed to be many undocumented immigrants living in Moscow city limits, and the actual population of Moscow may be between 13 million and 17 million. Moscow is the northernmost megacity in the world and the 11th most populated city on Earth.</item>
+        <item>St. Petersburg, which is the former capital of Russia, has a population of about 5.4 million people. It is the second-most populated city in Russia mainly because of its location on the Baltic Sea and its status as the former capital. St. Petersburg is a major port city and one of the most important transportation hubs in Russia. The Port of St. Petersburg is the largest port in Russia and sees both commercial and cruise ships as it is of international significance. St. Petersburg is also known for its extensive rail system which connects to cities like Moscow, Warsaw, and Helsinki. The Russian government is also in the process of planning a high-speed railway that will connect St. Petersburg with Moscow and Nizhny-Novgorod.</item>
+        <item>Novosibirsk is the third-most populated city in Russia with a population of about 1.6 million people. It’s the most populated city in Asian Russia and known for its manufacturing industry. Novosibirsk manufactures heavy equipment, mining machinery, electrothermal equipment, hydraulic presses, farm machinery, and many other types of machinery that are vital to Russia’s economy. The city’s manufacturing industry has caused the city to grow, and it is now the most populated city in Siberia, as well as being the regions cultural and educational hub. Novosibirsks prime location on the Ob River made it the ideal place to produce hydroelectricity, so the Novosibirsk hydroelectric station was opened in 1957.</item>
+    </string-array>
+
+    <string-array name="blr_cities_desc">
+        <item>First mentioned in 1067, Minsk became the capital of the Principality of Minsk, an appanage of the Principality of Polotsk, before being annexed by the Grand Duchy of Lithuania in 1242. It received town privileges in 1499.[4] From 1569, it was the capital of Minsk Voivodeship, an administrative division of the Polish–Lithuanian Commonwealth. It was part of the territories annexed by the Russian Empire in 1793, as a consequence of the Second Partition of Poland. From 1919 to 1991, after the Russian Revolution, Minsk was the capital of the Byelorussian Soviet Socialist Republic, which became a republic of the Soviet Union in 1922. Following the dissolution of the Soviet Union, Minsk became the capital of the newly independent Republic of Belarus.</item>
+        <item>The first appearance of the name, as "Gomy", dates from 1142.[4] Up to the 16th century, the city was mentioned as Hom, Homye, Homiy, Homey, or Homyi. These forms are tentatively explained as derivatives of unattested *gomŭ of uncertain meaning.[5] The modern name for the city has been in use only since the 16th or 17th century.</item>
+        <item>Vitebsk developed from a river harbor where the Vićba River (Віцьба, from which it derives its name) flows into the larger Western Dvina, which is spanned in the city by the Kirov Bridge.
+
+Archaeological research indicates that Baltic tribes had settlements at the mouth of Vitba. In the 9th century, Slavic settlements of the tribal union of the Krivichs replaced them. According to the Chronicle of Michael Brigandine (1760), Princess Olga of Kiev founded Vitebsk (also recorded as Dbesk, Vidbesk, Videbsk, Vitepesk, or Vicibesk) in 974. Other versions give 947 or 914. Academician Boris Rybakov and historian Leonid Alekseyev have come to the conclusion, based on the chronicles, that Princess Olga of Kiev could have established Vitebsk in 947. Leonid Alekseyev suggested that the chroniclers, when transferring the date from the account of the Byzantine era (since the creation of the world) to a new era, obtained the year 947, later mistakenly written in copying manuscripts as 974. It was an important place on the trade route from the Varangians to the Greeks. By the end of the 12th century, Vitebsk became a center of trade and commerce, and the center of an independent principality, following the Polotsk, and at times, the Smolensk and Kiev princes.</item>
+    </string-array>
+
+    <string-array name="china_cities_desc">
+        <item>The capital city, Beijing, is in northern China — more specifically, the northern part of the countries Eastern coast. Considered by many to be the heart of Chinese politics, culture and history, Beijing is home to landmarks like the Forbidden City and the Great Wall. Beijing was also the host of the 2008 Summer Olympics.</item>
+        <item>Shanghai is Chinas most populous city, situated on the East China Sea at the mouth of the Yangtze River. Its urban population powers the city, which has become a global financial hub with world-class shopping, dining and art scenes. Shanghai is also known for its iconic skyline, which includes The Bund and the futuristic buildings of Lujiazui.</item>
+        <item>Tianjin, located near Beijing, is a major port city and key commercial center with a blend of colonial and modern architecture. Its historic concession areas and the Tianjin Eye ferris wheel attract millions of tourists annually.</item>
+    </string-array>
+
+</resources>

@@ -1,64 +1,98 @@
 package com.example.fragmentshomeworks;
 
+import static android.view.View.INVISIBLE;
+import static android.view.View.VISIBLE;
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.Spinner;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link CitiesFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class CitiesFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public CitiesFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment CitiesFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static CitiesFragment newInstance(String param1, String param2) {
-        CitiesFragment fragment = new CitiesFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+    private Spinner spinCountry, spinRus, spinBel, spinChi;
+    private final int[] imgRus = {R.drawable.moscow, R.drawable.saint_petersburg, R.drawable.novosibirsk};
+    private final int[] imgBel = {R.drawable.minsk, R.drawable.gomel, R.drawable.vitebsk};
+    private final int[] imgChi = {R.drawable.beijing, R.drawable.shanghai, R.drawable.tianjin};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cities, container, false);
+        View view = inflater.inflate(R.layout.fragment_cities, container, false);
+        spinCountry = view.findViewById(R.id.spinnerCountries);
+        spinCountry.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if(position == 0) {
+                    spinBel.setVisibility(INVISIBLE);
+                    spinChi.setVisibility(INVISIBLE);
+                    spinRus.setVisibility(VISIBLE);
+                } else if (position == 1) {
+                    spinBel.setVisibility(VISIBLE);
+                    spinChi.setVisibility(INVISIBLE);
+                    spinRus.setVisibility(INVISIBLE);
+                } else if (position == 2){
+                    spinBel.setVisibility(INVISIBLE);
+                    spinChi.setVisibility(VISIBLE);
+                    spinRus.setVisibility(INVISIBLE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        spinRus = view.findViewById(R.id.spinnerRU);
+        spinBel = view.findViewById(R.id.spinnerBL);
+        spinChi = view.findViewById(R.id.spinnerUK);
+        view.findViewById(R.id.buttonToShow).setOnClickListener(v -> onClickShowInfo());
+        return view;
+    }
+
+    public void onClickShowInfo() {
+        String[] cities;
+        String[] descriptions;
+        int cityPosition;
+        String city;
+        String description;
+        int resId;
+        if(spinCountry.getSelectedItemPosition() == 0) {
+            cityPosition = spinRus.getSelectedItemPosition();
+            cities = getResources().getStringArray(R.array.rus_cities);
+            descriptions = getResources().getStringArray(R.array.rus_cities_desc);
+            city = cities[cityPosition];
+            description = descriptions[cityPosition];
+            resId = imgRus[cityPosition];
+        } else if (spinCountry.getSelectedItemPosition() == 1) {
+            cityPosition = spinBel.getSelectedItemPosition();
+            cities = getResources().getStringArray(R.array.bel_cities);
+            descriptions = getResources().getStringArray(R.array.blr_cities_desc);
+            city = cities[cityPosition];
+            description = descriptions[cityPosition];
+            resId = imgBel[cityPosition];
+        } else {
+            cityPosition = spinChi.getSelectedItemPosition();
+            cities = getResources().getStringArray(R.array.china_cities);
+            descriptions = getResources().getStringArray(R.array.china_cities_desc);
+            city = cities[cityPosition];
+            description = descriptions[cityPosition];
+            resId = imgChi[cityPosition];
+        }
+        Bundle bundle = new Bundle();
+        bundle.putString("city",city);
+        bundle.putString("description", description);
+        bundle.putInt("resId",resId);
+
+        Fragment fragment2 = new CityDetails();
+        fragment2.setArguments(bundle);
+
+        assert getFragmentManager() != null;
+        getFragmentManager()
+                .beginTransaction()
+                .replace(R.id.frameInfo, fragment2)
+                .commit();
     }
 }
