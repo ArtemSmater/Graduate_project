@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">Discount Calculate</string>
-    <string name="enter_price_here">Enter price here:</string>
-    <string name="_123">123...</string>
-    <string name="your_discount_is">Your discount is</string>
-    <string name="solve_discount">Solve discount</string>
-    <string name="clear_list">Clear list</string>
-    <string name="last_prices_are">Last prices are:</string>
-</resources>

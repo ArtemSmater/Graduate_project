@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Dishes Collection</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="categories">Categories</string>
+    <string name="areas">Areas</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="instruction">Instruction:</string>
+    <string name="dishes_library">Recipe book</string>
+    <string name="tutorial_video">Tutorial video:</string>
+
+</resources>

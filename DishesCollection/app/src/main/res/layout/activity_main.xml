@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        app:titleTextColor="@color/black" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tlTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextAppearance="@style/TabTextFont"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorColor="@color/red"
+        app:tabSelectedTextColor="@color/red">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tiCities"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/categories" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/itemTwo"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/areas" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/itemThree"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/ingredients" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
