@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">WeatherApplicationDB</string>
-    <string name="city_to_add">City to add:</string>
-    <string name="add_city">ADD CITY</string>
-</resources>
